@@ -15,7 +15,7 @@
     <title>Xarala Contact</title>
 </head>
 
-<body class="body_contact">
+<body>
     <nav class="navbar">
         <div class="logo">
             <h1>Xarala</h1>
@@ -34,32 +34,116 @@
         </div>
     </nav>
 
-    <div class="container_contact">
-        <div class="left_contact">
-            <div class="contact">
-                <h2>Get in Touch</h2>
-                <form action="">
-                    <label for="name"> Your Name</label>
-                    <input type="text" name="name" required>
-                    <label for="email"> Your Email:</label>
-                    <input type="email" name="email" required>
-                    <label for="message"> Message:</label>
-                    <textarea name="message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
+    <div class="slider">
+        <input type="radio" name="slide" id="slide-1" checked>
+        <input type="radio" name="slide" id="slide-2">
+        <input type="radio" name="slide" id="slide-3">
+
+        <div class="slides">
+            <div class="slide slide-1">
+                <div class="slide-data">
+                    <h1>MERCI BCP #1</h1>
+                    <P>Lorem ipsum dolor sit<br> amet consectetur adipisicing elit.
+                        Repudiandae reprehenderit et commodi illo sapiente
+                        aspernatur assumenda tenetur <br>ullam magnam placeat,
+                        animi<br> necessitatibus fugit illum quod quae veniam
+                        possimus libero dolorum?
+                    </P>
+                    <button class="pro">S'INSCRIRE</button>
+                </div>
+            </div>
+            <div class=" slide slide-2">
+                <div class="slide-data">
+                    <h1>MERCI BCP #2</h1>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Repudiandae reprehenderit<br> et commodi illo sapiente
+                        aspernatur assumenda tenetur ullam magnam placeat,
+                        animi necessitatibus fugit illum quod quae veniam
+                        possimus libero dolorum?
+                    </P>
+                    <button class="pro">Contactez-nous</button>
+                </div>
+            </div>
+            <div class="slide slide-3">
+                <div class="slide-data">
+                    <h1>MERCI BCP #3</h1>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                        Repudiandae reprehenderit et commodi illo sapiente
+                        aspernatur assumenda tenetur<br> ullam magnam placeat,
+                        animi necessitatibus<br> fugit illum quod quae veniam
+                        possimus libero dolorum?
+                    </P>
+                    <button class="pro">Appellez-ous</button>
+                </div>
             </div>
         </div>
-        <div class="right_contact">
-            <div class="content_contact">
-                <h1>Contact Us</h1>
-                <p>Lorem ipsum dolor , t tempore omnis et culpa ab. Nostrum ipsa veniam repudiandae.</p>
-                <h2>Contact Information</h2>
-                <p>Email: conatct@exemple.com</p>
-                <p>Phone:(+221) 77 350 6996</p>
-                <P>Adresse 123 Main Xarala , Sicap Mbao</P>
-            </div>
+
+
+
+        <dv class="arrows arrow-left">
+            <label for="slide-3">
+                <span><i class="fas fa-angle-left"></i></span>
+            </label>
+            <label for="slide-1">
+                <span><i class="fas fa-angle-left"></i></span>
+            </label>
+            <label for="slide-2">
+                <span><i class="fas fa-angle-left"></i></span>
+            </label>
+        </dv>
+
+        <dv class="arrows arrow-right">
+            <label for="slide-2">
+                <span><i class="fas fa-angle-right"></i></span>
+            </label>
+            <label for="slide-3">
+                <span><i class="fas fa-angle-right"></i></span>
+            </label>
+            <label for="slide-1">
+                <span><i class="fas fa-angle-right"></i></span>
+            </label>
+        </dv>
+        <div class="dots">
+            <label for="slide-1"></label>
+            <label for="slide-2"></label>
+            <label for="slide-3"></label>
         </div>
+
+
     </div>
+
+
+
+
+
+
+    <section class="body-contact">
+        <div class="container-contact">
+            <div class="left-contact">
+                <div class="contact">
+                    <h2>Get in Touch</h2>
+                    <form action="">
+                        <label for="name"> Your Name</label>
+                        <input type="text" name="name" required>
+                        <label for="email"> Your Email:</label>
+                        <input type="email" name="email" required>
+                        <label for="message"> Message:</label>
+                        <textarea name="message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="right-contact">
+                <div class="content-contact">
+                    <h1>Contact Us</h1>
+                    <p>Lorem ipsum dolor , t tempore omnis et culpa ab. Nostrum ipsa veniam repudiandae.</p>
+                    <h2>Contact Information</h2>
+                    <p>Email: conatct@exemple.com</p>
+                    <p>Phone:(+221) 77 350 6996</p>
+                    <P>Adresse 123 Main Xarala , Sicap Mbao</P>
+                </div>
+            </div>
+        </div>
     </section>
 
     <div id="footer">
@@ -84,6 +168,7 @@
             $(".menu-btn i").toggleClass("active");
         });
     </script>
+    </section>
 </body>
 
 </html>
